@@ -20,7 +20,8 @@ namespace ScrabbleScore.Models
       { 'k', 5 },
       { 'l', 1 },
       { 'm', 3 },
-      { 'n', 1 }
+      { 'n', 1 },
+      { 'o', 1 }
     };
 
     public Scrabble(string word)
