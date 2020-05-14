@@ -7,7 +7,7 @@ namespace ScrabbleScore.Models
 
     public Scrabble(string word)
     {
-      Word = word;
+      Word = word.ToLower();
     }
   }
 }
