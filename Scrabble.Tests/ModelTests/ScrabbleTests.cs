@@ -236,5 +236,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 4);
     }
+
+    [TestMethod]
+    public void GetLetterScores_ReturnsLetterWScore_LetterWScore()
+    {
+      char letter = 'w';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 4);
+    }
   }
 }
