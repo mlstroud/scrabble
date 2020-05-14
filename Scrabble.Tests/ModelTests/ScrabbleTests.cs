@@ -13,6 +13,8 @@ namespace ScrabbleScore.Tests
       Scrabble scrabble = new Scrabble(newWord);
 
       string result = scrabble.Word;
+
+      Assert.AreEqual(result, newWord.ToLower());
     }
   }
 }
