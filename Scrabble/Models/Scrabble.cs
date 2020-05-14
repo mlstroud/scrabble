@@ -7,7 +7,8 @@ namespace ScrabbleScore.Models
     public string Word { get; set; }
     private static Dictionary<char, int> _letterScores = new Dictionary<char, int>
     {
-      { 'a', 1 }
+      { 'a', 1 },
+      { 'b', 3 }
     };
 
     public Scrabble(string word)
