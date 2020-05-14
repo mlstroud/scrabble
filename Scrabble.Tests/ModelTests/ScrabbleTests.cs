@@ -278,6 +278,16 @@ namespace ScrabbleScore.Tests
     }
 
     [TestMethod]
+    public void GetLetterScore_ReturnsZeroIfNotLetter_Zero()
+    {
+      char letter = '!';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 0);
+    }
+
+    [TestMethod]
     public void GetWordScore_ReturnsWordScore_WordScore()
     {
       string word = "Hello";
