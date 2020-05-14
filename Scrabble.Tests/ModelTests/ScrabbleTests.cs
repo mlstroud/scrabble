@@ -266,5 +266,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 4);
     }
+
+    [TestMethod]
+    public void GetLetterScores_ReturnsLetterZScore_LetterCZcore()
+    {
+      char letter = 'z';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 10);
+    }
   }
 }
