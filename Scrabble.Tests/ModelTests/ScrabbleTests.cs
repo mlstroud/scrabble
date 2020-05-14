@@ -18,7 +18,7 @@ namespace ScrabbleScore.Tests
     }
 
     [TestMethod]
-    public void Dictionary_StoresScoresOfLetters_DictionaryOfScores()
+    public void GetLetterScores_ReturnsLetterAScore_LetterAScore()
     {
       char letter = 'a';
 
@@ -28,7 +28,7 @@ namespace ScrabbleScore.Tests
     }
 
     [TestMethod]
-    public void Dictionary_StoresScoresOfLetters_DictionaryOfScores()
+    public void GetLetterScores_ReturnsLetterBScore_LetterBScore()
     {
       char letter = 'b';
 
