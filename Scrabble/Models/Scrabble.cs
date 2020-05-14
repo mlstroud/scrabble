@@ -5,6 +5,7 @@ namespace ScrabbleScore.Models
   public class Scrabble
   {
     public string Word { get; set; }
+    public int Score { get; set; }
     private static Dictionary<char, int> _letterScores = new Dictionary<char, int>
     {
       { 'a', 1 },
@@ -38,6 +39,7 @@ namespace ScrabbleScore.Models
     public Scrabble(string word)
     {
       Word = word.ToLower();
+      Score = 0;
     }
 
     public static int GetLetterScore(char letter)
@@ -47,7 +49,12 @@ namespace ScrabbleScore.Models
 
     public int GetWordScore()
     {
-      return 0;
+      foreach (char letter in Word)
+      {
+        Score += GetLetterScore(letter);
+      }
+
+      return Score;
     }
   }
 }
