@@ -166,5 +166,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 1);
     }
+
+    [TestMethod]
+    public void GetLetterScores_ReturnsLetterPScore_LetterPScore()
+    {
+      char letter = 'p';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 3);
+    }
   }
 }
