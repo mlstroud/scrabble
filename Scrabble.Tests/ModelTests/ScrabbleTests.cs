@@ -76,5 +76,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 4);
     }
+
+    [TestMethod]
+    public void GetLetterScores_ReturnsLetterGScore_LetterGScore()
+    {
+      char letter = 'g';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 2);
+    }
   }
 }
