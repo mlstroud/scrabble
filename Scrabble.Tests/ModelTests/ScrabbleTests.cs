@@ -276,5 +276,16 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 10);
     }
+
+    [TestMethod]
+    public void GetWordScore_ReturnsWordScore_WordScore()
+    {
+      string word = "Hello";
+      Scrabble scrabble = new Scrabble(word);
+
+      int result = scrabble.GetWordScore();
+
+      Assert.AreEqual(result, 8);
+    }
   }
 }
