@@ -42,7 +42,12 @@ namespace ScrabbleScore.Models
 
     public static int GetLetterScore(char letter)
     {
-      return _letterScores[letter];
+      return _letterScores.ContainsKey(letter) ? _letterScores[letter] : 0;
+    }
+
+    public int GetWordScore()
+    {
+      return 0;
     }
   }
 }
