@@ -7,14 +7,12 @@ namespace ScrabbleScore.Tests
   public class ScrabbleTests
   {
     [TestMethod]
-    public void Scrabble_TakesWordAsInput_Word()
+    public void Scrabble_ConvertsWordToLowerCase_LowerCaseWord()
     {
       string newWord = "Hello";
       Scrabble scrabble = new Scrabble(newWord);
 
       string result = scrabble.Word;
-
-      Assert.AreEqual(result, newWord);
     }
   }
 }
