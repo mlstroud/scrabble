@@ -16,5 +16,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, newWord.ToLower());
     }
+
+    [TestMethod]
+    public void Dictionary_StoresScoresOfLetters_DictionaryOfScores()
+    {
+      char letter = 'a';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 1);
+    }
   }
 }
