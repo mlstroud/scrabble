@@ -116,5 +116,15 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(result, 8);
     }
+
+    [TestMethod]
+    public void GetLetterScores_ReturnsLetterKScore_LetterKScore()
+    {
+      char letter = 'k';
+
+      int result = Scrabble.GetLetterScore(letter);
+
+      Assert.AreEqual(result, 5);
+    }
   }
 }
